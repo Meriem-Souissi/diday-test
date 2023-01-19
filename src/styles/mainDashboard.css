@@ -1,0 +1,67 @@
+.main-dashboard-wrapper {
+  padding: 22px 43px 37px;
+  width: 100%;
+  height: 100%;
+}
+.main-dashboard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 9px;
+}
+.main-dashboard-content {
+  margin-top: 26px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.main-dashboard-footer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.calendar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 5px 12px;
+  border-radius: 20px;
+  box-shadow: -2px -2px 7px #ffffff, 2px 2px 7px #bed5ff;
+  color: #272727;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+.demenagements-buttons {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-top: 9px;
+}
+.demenagement-cards-entete {
+  padding: 16px 11px 11px 20px;
+  display: flex;
+  align-items: center;
+  color: #979797;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+}
+.entete-right-side {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.entete-departure {
+  width: 65px;
+}
+.entete-line {
+  border-top: 1px solid white;
+  width: 22%;
+  position: relative;
+}

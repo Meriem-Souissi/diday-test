@@ -1,0 +1,52 @@
+.left-side-dashboard-wrapper {
+  background-color: #f0f5fe;
+  height: 100%;
+}
+.left-side-dashboard-top {
+  position: relative;
+  width: inherit;
+}
+.nature-image {
+  width: 100%;
+  height: 362px;
+  object-fit: cover;
+}
+.icons-wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 7%;
+  position: absolute;
+  left: 10%;
+  top: 32px;
+}
+.left-side-dashboard-top h1 {
+  color: #fcfdff;
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 204px;
+}
+.truck-image {
+  position: absolute;
+  bottom: 51px;
+  right: 8.5%;
+}
+.activity-wrapper {
+  padding: 27px 40px 38px 23px;
+}
+.activity-date {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 22px;
+}
+.activity-date h5 {
+  font-family: "Helvetica Neue";
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #272727;
+}

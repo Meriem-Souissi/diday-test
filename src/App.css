@@ -1,38 +1,273 @@
-.App {
-  text-align: center;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.main-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 46px;
+  color: #272727;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* ADD INDICATOR COMPONENT */
+.add-indicator-wrapper {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  column-gap: 8px;
+}
+.add-indicator-text {
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3f7fff;
+}
+
+/* WIDGET COMPONENT */
+.widget-wrapper {
+  border-radius: 10px;
+  box-shadow: 12px 12px 24px #d4e4ff, -12px -12px 24px #ffffff;
+  padding: 15px 25px 17px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  width: 230px;
+}
+.widget-wrapper:nth-child(1) {
+  background-color: #3f7fff;
+}
+.widget-wrapper:nth-child(2) {
+  background: #e4ac6f;
+}
+.widget-wrapper:nth-child(3) {
+  background: #000000;
+}
+.widget-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7.45px;
+}
+.widget-number {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #272727;
+}
+
+.widget-wrapper .css-5xe99f-MuiLinearProgress-bar1 {
+  background-color: #ffffff !important;
+  border-radius: 10px !important;
+}
+.widget-text {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+.widget-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.widget-pourcentage {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ffffff;
+}
+/* PIE CHART */
+.pie-chart-card-wrapper {
+  border-radius: 10px;
+  box-shadow: 12px 12px 24px #d4e4ff, -12px -12px 24px #ffffff;
+  padding: 15px 27px 30px;
+  width: 312px;
+}
+.Pie-chart-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7.45px;
+}
+.Pie-chart-card-title {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #272727;
+}
+.pie-chart-card-date {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #898989;
+}
+.legends-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 400;
+  font-size: 12px;
+  font-family: "Helvetica Neue";
+  line-height: 14px;
+}
+.legend-item {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  column-gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+/* DEMENAGEMENTS BUTTON COMPONENT */
+.demenagements-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 12px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(63, 127, 255, 0.25);
+  background-color: #f0f5fe;
+  color: #272727;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+/* DEMENAGEMENTS CARD COMPONENT */
+.demenagement-card-wrapper {
+  border-radius: 10px;
+  box-shadow: 7px 7px 10px #d4e4ff, -7px -7px 10px #ffffff;
+  padding: 11px 23px 11px 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+.card-departure-arrival {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 12px;
+  color: #272727;
+  max-width: 64px;
+}
+.card-right-side {
+  display: flex;
+  align-items: center;
+  padding-left: 14px;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+.card-date-time {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  align-items: center;
+}
+.card-date-time p,
+.card-responsable {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #272727;
+  text-align: center;
+}
+.demenagement-card-line {
+  border-top: 1px solid #3f7fff;
+  width: 22%;
+  position: relative;
+}
+.demenagement-card-line::before {
+  content: "\2022";
+  color: #3f7fff;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: -9px;
+  left: -3px;
+}
+.demenagement-card-line::after {
+  content: "\2022";
+  color: #3f7fff;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: -9px;
+  right: -3px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ACTIVITY CARD COMPONENT */
+.activity-card-wrpper {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-top: 22px;
+}
+.activity-time {
+  font-family: "Helvetica Neue";
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #3f7fff;
+}
+.activity-infos {
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #d4e4ff, -5px -5px 10px #ffffff;
+  padding: 25px 0px 30px 20px;
+  flex-grow: 1;
+}
+.activity-title {
+  font-family: "Helvetica Neue";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #272727;
+  margin-bottom: 12px;
+}
+.activity-description {
+  font-family: "Helvetica Neue";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #898989;
+}
+
+/* AGENDA COMPONENT */
+.agenda-wrapper {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.agenda-item-wraper {
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0px 5px;
+  border-radius: 10px;
+}
+.agenda-item-day {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #272727;
+}
+.agenda-item-date {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+  color: #272727;
 }
